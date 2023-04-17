@@ -17,10 +17,10 @@ module.exports = {
     },
     createThought(req, res) {
         Thought.create(req.body)
-          .then(({_id}) => {
+          .then((thought) => {
             return User.findOneAndUpdate(
               { _id: req.body.userId },
-              { $push: { thoughts: _id } },  
+              { $push: { thoughts:thought._id } },  
               { new: true }
             );
     })
