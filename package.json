@@ -21,6 +21,7 @@
   "homepage": "https://github.com/chrisjg19/MongooseUserCreate#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "mongoose": "^7.0.3"
   },
   "devDependencies": {
